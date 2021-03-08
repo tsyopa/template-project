@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "../../target/server",
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["../common/*"]
+    }
+  },
+  "include": ["*"],
+  "references": [{"path": "../common"}]
+}
