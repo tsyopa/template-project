@@ -10,7 +10,7 @@
     "build:client": "webpack --config src/client/webpack.config.ts",
     "watch:client": "webpack -w --config src/client/webpack.config.ts",
     "start": "node target/server/app.js",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s target/client -p 6006",
     "build-storybook": "build-storybook"
   },
   "author": "",
