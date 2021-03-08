@@ -1,9 +1,6 @@
-import { Some } from "./some"
-import { StrUtil } from "@common/str-util"
+import * as ReactDOM from "react-dom"
+import { App } from "./components/app"
+import "./styles/app.scss"
 
-import "./styles/main.scss"
-
-console.log("CLIENT!")
-const some = new Some()
-some.say()
-StrUtil.check()
+const appEl = document.getElementById("app")
+ReactDOM.render(App(), appEl)

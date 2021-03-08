@@ -4,6 +4,10 @@
 - [ok] webpack
 - [ok] prettier
 - [ok] jest
-- scss, postcss
+- [ok] scss
+- fonts
+- postcss
+- styled components
+- theming
 - i18n
 - storybook

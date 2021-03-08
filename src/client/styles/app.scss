@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@import "./reset.scss";
+@import "./colors.scss";
+
+@import "../components/**/*.scss";

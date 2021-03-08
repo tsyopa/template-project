@@ -2,10 +2,13 @@ import "node-polyfill-webpack-plugin"
 
 import * as path from "path"
 import * as webpack from "webpack"
+const MiniCSSExtractPlugin = require("mini-css-extract-plugin")
 
 const config: webpack.Configuration = {
   mode: "development",
   entry: path.join(__dirname, "./app.ts"),
+  plugins: [new MiniCSSExtractPlugin({ filename: "app.css" })],
+  devtool: "eval-source-map",
   module: {
     rules: [
       {
@@ -16,7 +19,7 @@ const config: webpack.Configuration = {
       {
         test: /\.scss$/i,
         use: [
-          "style-loader",
+          MiniCSSExtractPlugin.loader,
           "css-loader",
           "sass-loader",
           "import-glob-loader",
@@ -32,7 +35,7 @@ const config: webpack.Configuration = {
   },
   output: {
     path: path.join(__dirname, "../../target/client"),
-    filename: "app.bundle.js",
+    filename: "app.js",
   },
 }
 

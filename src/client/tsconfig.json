@@ -7,6 +7,6 @@
       "@common/*": ["../common/*"]
     }
   },
-  "include": ["*"],
-  "references": [{"path": "../common"}]
+  "include": ["./**/*"],
+  "references": [{ "path": "../common" }]
 }
