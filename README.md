@@ -2,6 +2,11 @@
 
 Monorepo template for react client and express server.
 
+```bash
+npm run build
+npm start
+```
+
 ### Checklist
 
 - [x] typescript (+ modules)
@@ -25,3 +30,5 @@ Monorepo template for react client and express server.
 - [ ] pwa
 - [ ] server components
 - [ ] create app tool
+- [ ] logging
+- [ ] configuration

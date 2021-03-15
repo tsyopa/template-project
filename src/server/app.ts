@@ -12,4 +12,4 @@ app.get("/some", (_req, res) => {
 
 StrUtil.check()
 
-app.listen(9000)
+app.listen(9000, () => console.log("Running on port 9000"))

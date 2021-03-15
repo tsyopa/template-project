@@ -9,6 +9,7 @@ const config: webpack.Configuration = {
   entry: path.join(__dirname, "./app.ts"),
   plugins: [new MiniCSSExtractPlugin({ filename: "app.css" })],
   devtool: "eval-source-map",
+  stats: "minimal",
   module: {
     rules: [
       {

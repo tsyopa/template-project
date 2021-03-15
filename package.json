@@ -11,7 +11,8 @@
     "watch:client": "webpack -w --config src/client/webpack.config.ts",
     "start": "node target/server/app.js",
     "storybook": "start-storybook -s target/client -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "pnpm i && npm run build:server && npm run build:client"
   },
   "author": "",
   "license": "ISC",
